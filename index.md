@@ -64,4 +64,6 @@ Now that you have done all the work to remotely connect to a computer, you shoul
 * ls <directory>
 
 **In order to log out of the remote server use:** Control+D or type "exit" in the terminal
-
+**Bonus** - You can open more than one terminal in VSCode by clicking on the plus icon 
+  
+![image](https://user-images.githubusercontent.com/113940184/212246604-35cc4787-bb1f-441c-9386-527eaa9e117b.png)
