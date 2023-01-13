@@ -42,4 +42,13 @@ The terminal should give you something along the lines of "authenticity of host 
 
 ![image](https://user-images.githubusercontent.com/113940184/212244508-bafc58b0-c518-4045-b566-41335266e072.png)
 
+Next we will have to enter in our password. Just like on any other sight, you will not be able to see what you are typing(Do not worry if no characters are showing up that is completely normal) 
+
+![image](https://user-images.githubusercontent.com/113940184/212244751-4bc44d80-8226-4b06-9295-ee8765fb9b69.png)
+
+In this image my password is completely typed out but you see nothing. 
+
+![image](https://user-images.githubusercontent.com/113940184/212244885-4397c6b9-a72a-4283-b2e1-3a658749da9b.png)
+
+You should see something similar to this when you log in. It won't be exactly the same as not everyone will connect to the same computer I connected to. 
 
