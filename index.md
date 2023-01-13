@@ -63,5 +63,5 @@ Now that you have done all the work to remotely connect to a computer, you shoul
 * ls -a
 * ls <directory>
 
+**In order to log out of the remote server use:** Control+D or type "exit" in the terminal
 
-  
