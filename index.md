@@ -38,7 +38,7 @@ Once we open up the terminal we want to type $ ssh cs15lwi23zz@ieng6.ucsd.edu in
 
 ![image](https://user-images.githubusercontent.com/113940184/212244451-6dfe131b-ddc5-443e-950c-b1cec5c7d31f.png)
 
-The terminal should give you something along the lines of "authenticity of host ... can't be established... want to continue connecting. Type yes. You will commonly have to type yes to these, there are a few exceptions where having this come up may be an indication someone is watching what you are doing.
+The terminal should give you something along the lines of "authenticity of host ... can't be established... want to continue connecting." Type yes. You will commonly have to type yes to these, there are a few exceptions where having this come up may be an indication someone is watching what you are doing.
 
 ![image](https://user-images.githubusercontent.com/113940184/212244508-bafc58b0-c518-4045-b566-41335266e072.png)
 
