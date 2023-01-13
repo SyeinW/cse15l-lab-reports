@@ -16,7 +16,7 @@ After finishing the installation, open up VScode to make sure everything looks r
 
 I am not using default themes, so yours might look slightly different than mine, but when you first open you should get a "get started" tab. 
 
-## Remote Connection + git installation 
+## Remote Connection + Git Installation 
 **if you are on Linux or OSX you can skip the git installation**
 
 For the Windows users, we want to install git for Windows. To start, we want to head to [https://gitforwindows.org/](https://gitforwindows.org/). 
