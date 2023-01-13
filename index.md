@@ -21,6 +21,10 @@ I am not using default themes, so yours might look slightly different than mine,
 
 For the Windows users, we want to install git for Windows. To start, we want to head to [https://gitforwindows.org/](https://gitforwindows.org/). 
 
-The page should look like this. Click on the Download button
+The page should look similar to this. Click on the Download button to install the setup.
 ![image](https://user-images.githubusercontent.com/113940184/212239656-e8d27ff8-b6d7-4a6c-a1ca-1bf86f61f8d3.png)
 
+Once you open the setup, you will have to go through a few different setup options. Feel free to choose whatever options you want. I would recommend just using the recommend settings on the setup launcher. 
+![image](https://user-images.githubusercontent.com/113940184/212240141-e27245dd-7dce-4a9f-8267-3ab63131b01f.png)
+
+**Start here if you don't need to install git**
