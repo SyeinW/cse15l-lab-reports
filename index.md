@@ -44,7 +44,7 @@ The terminal should give you something along the lines of "authenticity of host 
 
 Next we will have to enter in our password. Just like on any other sight, you will not be able to see what you are typing(Do not worry if no characters are showing up that is completely normal) 
 
-![image](https://user-images.githubusercontent.com/113940184/212244751-4bc44d80-8226-4b06-9295-ee8765fb9b69.png)
+![image](https://user-images.githubusercontent.com/113940184/212245114-78f95697-a6ea-4f2e-afd6-3c92a7dc8553.png)
 
 In this image my password is completely typed out but you see nothing. 
 
