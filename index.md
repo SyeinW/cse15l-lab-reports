@@ -54,6 +54,7 @@ You should see something similar to this when you log in. It won't be exactly th
 
 ## Testing the Terminal/Remote Connection
 Now that you have done all the work to remotely connect to a computer, you should check out the terminal. Try using some different commands to get around the directory. You can go almost anywhere(except where you don't have permissions to be). 
+
 *commands to try*
 * cd ~
 * cd 
