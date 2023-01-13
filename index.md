@@ -1,3 +1,1 @@
-Hello, world!
-# Vinnie
-[Link](https://vinniethecaptain.github.io/cse15l-lab-reports/)
+[Lab Report 1](#Report1.md)
