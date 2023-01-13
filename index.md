@@ -1,1 +1,1 @@
-[Lab Report 1](#Report1.md)
+# Lab Report 1
