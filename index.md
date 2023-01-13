@@ -1,6 +1,6 @@
 # Lab Report 1
 ## VScode Installation Guide 
-The first thing we want to do is install the text editor VScode. Follow this [link](https://code.visualstudio.com/). Pick the download based on your computer's os. For me its windows, but for you it might be Linux or OSX. 
+The first thing we want to do is install the text editor VScode. Head to [https://code.visualstudio.com/](https://code.visualstudio.com/). Pick the download based on your computer's os. For me its windows, but for you it might be Linux or OSX. 
 
 ![image](https://user-images.githubusercontent.com/113940184/212237079-43bafdc3-9bb2-4d89-81e0-b9ea90851c0d.png)
 
@@ -19,4 +19,8 @@ I am not using default themes, so yours might look slightly different than mine,
 ## Remote Connection + git installation 
 **if you are on Linux or OSX you can skip the git installation**
 
-For the Windows users 
+For the Windows users, we want to install git for Windows. To start, we want to head to [https://gitforwindows.org/](https://gitforwindows.org/). 
+
+The page should look like this. Click on the Download button
+![image](https://user-images.githubusercontent.com/113940184/212239656-e8d27ff8-b6d7-4a6c-a1ca-1bf86f61f8d3.png)
+
