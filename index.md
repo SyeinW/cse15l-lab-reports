@@ -28,4 +28,6 @@ Once you open the setup, you will have to go through a few different setup optio
 
 ![image](https://user-images.githubusercontent.com/113940184/212240141-e27245dd-7dce-4a9f-8267-3ab63131b01f.png)
 
+Here is a tutorial on how to use the bash terminal on Windows in VScode [Tutorial](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994)
+
 **Start here if you don't need to install git**
