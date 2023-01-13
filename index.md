@@ -11,6 +11,7 @@ Once you have installed the VScode setup from their website, open it and complet
 ![image](https://user-images.githubusercontent.com/113940184/212237407-ee971a14-561c-484b-bd94-e3030923cedd.png)
 
 After finishing the installation, open up VScode to make sure everything looks right.
+
 ![image](https://user-images.githubusercontent.com/113940184/212237769-63413625-50c7-427b-b883-f74d4fcc44e3.png)
 
 I am not using default themes, so yours might look slightly different than mine, but when you first open you should get a "get started" tab. 
