@@ -18,4 +18,5 @@ I am not using default themes, so yours might look slightly different than mine,
 
 ## Remote Connection + git installation 
 **if you are on Linux or OSX you can skip the git installation**
+
 For the Windows users 
