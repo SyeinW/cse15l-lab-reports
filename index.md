@@ -1,6 +1,6 @@
 # Lab Report 1
 ## VScode Installation Guide 
-The first thing we want to do is install the text editor VScode. Head to [https://code.visualstudio.com/](https://code.visualstudio.com/). Pick the download based on your computer's os. For me its windows, but for you it might be Linux or OSX. 
+The first thing we want to do is install the text editor VScode. Head to [https://code.visualstudio.com/](https://code.visualstudio.com/). Pick the download based on your computer's os. For me, its windows, but for you it might be Linux or OSX. 
 
 ![image](https://user-images.githubusercontent.com/113940184/212237079-43bafdc3-9bb2-4d89-81e0-b9ea90851c0d.png)
 
