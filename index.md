@@ -31,3 +31,5 @@ Once you open the setup, you will have to go through a few different setup optio
 Here is a tutorial on how to use the bash terminal on Windows in VScode [Tutorial](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994)
 
 **Start here if you don't need to install git**
+
+We want to open up the terminal in VScode, we can use the keyboard shortcut control/command + \` or we can 
