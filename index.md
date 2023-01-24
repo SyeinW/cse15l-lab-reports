@@ -34,19 +34,47 @@ Here is a tutorial on how to use the bash terminal on Windows in VScode [Tutoria
 
 We want to open up the terminal in VScode, we can use the keyboard shortcut control/command + \` or we can use the menu option Terminal < New Terminal 
 
-Once we open up the terminal we want to type ```$ ssh cs15lwi23zz@ieng6.ucsd.edu``` into the terminal. "zz" is just an example user in this case, please change the "zz" to your unique user id(also you don't need to type the "$" bash does it for you).
+
+Once we open up the terminal we want to type 
+
+```$ ssh cs15lwi23zz@ieng6.ucsd.edu```
+
+into the terminal. "zz" is just an example user in this case, please change the "zz" to your unique user id(also you don't need to type the "$" bash does it for you).
 
 ![image](https://user-images.githubusercontent.com/113940184/212244451-6dfe131b-ddc5-443e-950c-b1cec5c7d31f.png)
 
-The terminal should give you something along the lines of "authenticity of host ... can't be established... want to continue connecting." Type yes. You will commonly have to type yes to these, there are a few exceptions where having this come up may be an indication someone is watching what you are doing.
+The terminal should give you something along the lines of "authenticity of host ... can't be established... want to continue connecting"(Because you haven't logged into the server before). 
 
-![image](https://user-images.githubusercontent.com/113940184/212244508-bafc58b0-c518-4045-b566-41335266e072.png)
+```
+$ ssh cs15lwi23zz@ieng6.ucsd.edu
+The authenticity of host 'ieng6.ucsd.edu (128.54.70.238)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+Type yes. You will commonly have to type yes to these, there are a few exceptions where having this come up may be an indication someone is watching what you are doing.
 
-Next we will have to enter in our password. Just like on any other sight, you will not be able to see what you are typing(Do not worry if no characters are showing up that is completely normal) 
+Next we will have to enter in our password. Just like on any other site, you will not be able to see what you are typing(Do not worry if no characters are showing up that is completely normal). 
+
+```
+$ ssh cs15lwi23zz@ieng6.ucsd.edu
+The authenticity of host 'ieng6-202.ucsd.edu (128.54.70.238)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+Password: 
+```
+Or if you make the same mistake I did and took too long to enter in your password the terminal will kick you out. Its no big deal you just have to reenter the ssh command. Should look similar to this
+
+```
+$ ssh cs15lwi23zz@ieng6.ucsd.edu
+(cs15lwi23zz@ieng6.ucsd.edu) Password:
+```
+
+**In the image below, my password is completely typed out but you see nothing.**
 
 ![image](https://user-images.githubusercontent.com/113940184/212245114-78f95697-a6ea-4f2e-afd6-3c92a7dc8553.png)
 
-In this image my password is completely typed out but you see nothing. 
+
 
 ![image](https://user-images.githubusercontent.com/113940184/212244885-4397c6b9-a72a-4283-b2e1-3a658749da9b.png)
 
