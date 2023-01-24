@@ -45,13 +45,8 @@ into the terminal. "xx" is just an example user in this case, please change the 
 
 The terminal should give you something along the lines of "authenticity of host ... can't be established... want to continue connecting"(Because you haven't logged into the server before). 
 
-```
-$ ssh cs15lwi23xx@ieng6.ucsd.edu
-The authenticity of host 'ieng6.ucsd.edu (128.54.70.238)' can't be established.
-RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
-This key is not known by any other names.
-Are you sure you want to continue connecting (yes/no/[fingerprint])?
-```
+![image](https://user-images.githubusercontent.com/113940184/212244508-bafc58b0-c518-4045-b566-41335266e072.png)
+
 Type yes. You will commonly have to type yes to these, there are a few exceptions where having this come up may be an indication someone is watching what you are doing.
 
 Next we will have to enter in our password. Just like on any other site, you will not be able to see what you are typing(Do not worry if no characters are showing up that is completely normal). 
@@ -63,32 +58,17 @@ RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 Password: 
 ```
+
 Or if you make the same mistake I did and took too long to enter in your password the terminal will kick you out. Its no big deal you just have to reenter the ssh command. Should look similar to this
-
-```
-$ ssh cs15lwi23xx@ieng6.ucsd.edu
-(cs15lwi23zz@ieng6.ucsd.edu) Password:
-```
-
-**In the image below, my password is completely typed out but you see nothing.**
 
 ![image](https://user-images.githubusercontent.com/113940184/212245114-78f95697-a6ea-4f2e-afd6-3c92a7dc8553.png)
 
+**In the image above, my password is completely typed out but you see nothing.**
+
+
 We are now logged into the terminal so everything you see below is happening on the remote server, not on your computer. 
 
-```
-Hello cs15lwi23xx, you are currently logged into ieng6-203.ucsd.edu
-
-You are using 0% CPU on this system
-
-Cluster Status 
-Hostname     Time    #Users   Load  Averages  
-ieng6-201   21:30:01   5  0.44,  0.15,  0.13
-ieng6-202   21:30:01   4  0.39,  0.13,  0.08
-ieng6-203   21:30:01   3  0.00,  0.04,  0.09
-
-Thu Jan 12, 2023 9:33pm - Prepping cs15lwi23
-```
+![image](https://user-images.githubusercontent.com/113940184/212244885-4397c6b9-a72a-4283-b2e1-3a658749da9b.png)
 
 You should see something similar to this when you log in. It won't be exactly the same as not everyone will connect to the same computer I connected to. 
 
