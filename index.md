@@ -104,10 +104,13 @@ Now that you have done all the work to remotely connect to a computer, you shoul
 * cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/
 * cat /home/linux/ieng6/cs15lwi23/public/hello.txt
 
-
 Feel free to run these commands in any order or even try some other commands you may know. 
 
-  
+Your data will be safe on the server assuming you only save it to your personal directory. No other student can access your personal home directory located within the server. For instance if I did ```cd /home/linux/ieng6/cs15lwi23/apn``` I would get a message back ```-bash: cd: cs15lwi23apn: Permission denied``` because that it not my home directory.
+
+The ```cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/``` was the most interesting command for me. I did not know what it did prior to running it. Basically it copied the hello.txt file in path /home/linux/ieng6/cs15lwi23/public/hello.txt to my home directory. It was also interesting in that I had to research a little on the differences between scp and cp. For the most part, you use scp when sending data to a server `ssh ...` so that your data will be encrypted while it travels from computer to server. And you use cp when copying files from one path on your computer to another
+
+
 
 **In order to log out of the remote server use:** Control+D or type "exit" in the terminal
 
