@@ -34,7 +34,7 @@ Here is a tutorial on how to use the bash terminal on Windows in VScode [Tutoria
 
 We want to open up the terminal in VScode, we can use the keyboard shortcut control/command + \` or we can use the menu option Terminal < New Terminal 
 
-Once we open up the terminal we want to type $ ssh cs15lwi23zz@ieng6.ucsd.edu into the terminal. "zz" is just an example user in this case, please change the "zz" to your unique user id(also you don't need to type the "$" bash does it for you).
+Once we open up the terminal we want to type ```$ ssh cs15lwi23zz@ieng6.ucsd.edu``` into the terminal. "zz" is just an example user in this case, please change the "zz" to your unique user id(also you don't need to type the "$" bash does it for you).
 
 ![image](https://user-images.githubusercontent.com/113940184/212244451-6dfe131b-ddc5-443e-950c-b1cec5c7d31f.png)
 
