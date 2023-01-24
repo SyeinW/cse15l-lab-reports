@@ -74,7 +74,21 @@ $ ssh cs15lwi23zz@ieng6.ucsd.edu
 
 ![image](https://user-images.githubusercontent.com/113940184/212245114-78f95697-a6ea-4f2e-afd6-3c92a7dc8553.png)
 
+We are now logged into the terminal so everything you see below is happening on the remote server, not on your computer. 
 
+```
+Hello cs15lwi23zz, you are currently logged into ieng6-203.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users   Load  Averages  
+ieng6-201   21:30:01   5  0.44,  0.15,  0.13
+ieng6-202   21:30:01   4  0.39,  0.13,  0.08
+ieng6-203   21:30:01   3  0.00,  0.04,  0.09
+
+Thu Jan 12, 2023 9:33pm - Prepping cs15lwi23
+```
 
 ![image](https://user-images.githubusercontent.com/113940184/212244885-4397c6b9-a72a-4283-b2e1-3a658749da9b.png)
 
