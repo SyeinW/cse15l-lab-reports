@@ -100,3 +100,4 @@ The original code was setting the array ```arr``` indexes equal to the empty arr
 
 # Part 3
 
+I had little experience with servers prior to the week 2 & 3 labs. I knew what a port, but I was pretty lost on everything else. Query was the most challenging at first because I didn't know the format, so I was trying to understand what NumberServer was doing without knowing the purpose of `?` or `=` or even acknowledging their existence. `?` is used to signify the start of the query string and `=` is used to seperate the parameter's name from the value of the parameter. 
