@@ -1,4 +1,5 @@
-# Part 1
+# Lab Report 2
+## Part 1
 
 ```
 import java.io.IOException;
@@ -43,9 +44,9 @@ class StringServer {
 * No values got changed since java threw an error 
 
 
-# Part 2
+## Part 2
 
-## Failed JUnit test
+### Failed JUnit test
 
 ```   
   @Test
@@ -56,7 +57,7 @@ class StringServer {
     assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input2));
 ```
 
-## Incorrect Pass test
+### Incorrect Pass test
 
 ```
   @Test
@@ -69,11 +70,11 @@ class StringServer {
   }
 ```
 
-## Symptom
+### Symptom
 
 ![image](https://user-images.githubusercontent.com/113940184/215661997-4aed813b-2f19-498a-a7d2-a3878a781fcf.png)
 
-## Bug Before
+### Bug Before
 
 ```
   static int[] reversed(int[] arr) {
@@ -85,7 +86,7 @@ class StringServer {
   }
 ```
 
-# Bug After
+### Bug After
 
 ```
   static int[] reversed(int[] arr) {
@@ -98,6 +99,6 @@ class StringServer {
 ```
 The original code was setting the array ```arr``` indexes equal to the empty array ```newArray``` indexes. The key problem here is that ```newArray``` was empty. So copying from the empty array just made the original array ```arr``` and empty array. By switching the positions of ```arr``` and ```newArray``` in line 4 we correct this mistake. Allowing for the non-empty array ```arr``` to copy over a reversed version onto the empty array ```newArray```.
 
-# Part 3
+## Part 3
 
 I had little experience with servers prior to the week 2 & 3 labs. I knew of ports, but I didn't know what their purpose was or how they got their numbers. A ports number comes from a specific connection in the computer ranging from 0-65535. The purpose of the number is to tell the computer where to send the information process by the server. Query was the most challenging at first because I didn't know the format, so I was trying to understand what NumberServer was doing without knowing the purpose of `?` or `=` or even acknowledging their existence. `?` is used to signify the start of the query string and `=` is used to seperate the parameter's name from the value of the parameter. 
