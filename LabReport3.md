@@ -23,7 +23,7 @@ his works, look for Abtei im Eichwald (Abbey in the Woods, 1809) and Der Mönch 
 233:Beside the lake, north of the town center is Neuer Garten, a pleasant English-style garden. It provides the perfect setting for Schloß Cecilienhof (1916), the ivy-covered, half-timbered pastiche of an English country manor built for Crown Prince Wilhelm and his wife. Winston Churchill, Joseph Stalin, and Harry Truman met here in July 1945 to draw up the Potsdam Agreement that fixed the division of Germany for the next 45 years. Today it’s a luxury hotel and restaurant.
 ```
 
-The ` -n ` command line option is printing the number of the output line which contains the specified text `Germany'
+The ` -n ` command line option prints the lines that have the specified string (`Germany` in this case) and their line number. This is useful for finding the exact line number where the string argument orginates. Could be useful for citations and quick searching for quotes. 
 
 ```
 $ grep -n "Lucayans" written_2/travel_guides/berlitz2/*.txt
@@ -31,7 +31,7 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:6:Centuries before the arri
 written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
 
-What its doing and why its useful
+The command line option ` -n ` is doing the exact same thing as it was in example 1, except we are giving a slightly different argument. In this case, we don't defined a specific `.txt` file for it to look at. Instead, we give it a directory and then use `*.txt` to search every txt file in the `berlitz2` directory for the string argument `Lucayans` 
 
 ### grep -l
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
