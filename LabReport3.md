@@ -2,29 +2,37 @@
 ## grep command-line options
 
 ### grep -n
-What its doing and why its useful
-
 (Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep))
+
 ``` ```
+
 ``` ```
+
+What its doing and why its useful
 
 ### grep -l
-What its doing and why its useful
-
 (Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep))
+
 ``` ```
+
 ``` ```
+
+What its doing and why its useful
 
 ### grep -c
-What its doing and why its useful
-
 (Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep))
+
 ``` ```
+
 ``` ```
+
+What its doing and why its useful
 
 ### grep -o
-What its doing and why its useful
-
 (Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep))
+
 ``` ```
+
 ``` ```
+
+What its doing and why its useful
