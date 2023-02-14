@@ -33,6 +33,7 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothe
 
 The command line option ` -n ` is doing the exact same thing as it was in example 1, except we are giving a slightly different argument. In this case, we don't defined a specific `.txt` file for it to look at. Instead, we give it a directory and then use `*.txt` to search every txt file in the `berlitz2` directory for the string argument `Lucayans` 
 
+
 ### grep -l
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
