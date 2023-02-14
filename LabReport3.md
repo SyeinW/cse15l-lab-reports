@@ -23,6 +23,7 @@ his works, look for Abtei im Eichwald (Abbey in the Woods, 1809) and Der Mönch 
 233:Beside the lake, north of the town center is Neuer Garten, a pleasant English-style garden. It provides the perfect setting for Schloß Cecilienhof (1916), the ivy-covered, half-timbered pastiche of an English country manor built for Crown Prince Wilhelm and his wife. Winston Churchill, Joseph Stalin, and Harry Truman met here in July 1945 to draw up the Potsdam Agreement that fixed the division of Germany for the next 45 years. Today it’s a luxury hotel and restaurant.
 ```
 
+
 The `-n` command line option prints the lines that have the specified pattern (`Germany` in this case) and their line number. This is useful for finding the exact line number where the pattern orginates. Could be useful for citations and quick searching for quotes. 
 
 ```
@@ -30,6 +31,7 @@ $ grep -n "Lucayans" written_2/travel_guides/berlitz2/*.txt
 written_2/travel_guides/berlitz2/Bahamas-History.txt:6:Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
 written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
+
 
 The command line option `-n` is doing the exact same thing as it was in example 1, except we are giving a slightly different argument. In this case, we don't defined a specific `.txt` file for it to look at. Instead, we give it a directory and then use `*.txt` to search every txt file in the `berlitz2` directory for the pattern `Lucayans` 
 
@@ -55,6 +57,7 @@ written_2/travel_guides/berlitz2/CostaBlanca-History.txt
 written_2/travel_guides/berlitz2/Poland-History.txt
 written_2/travel_guides/berlitz2/Portugal-History.txt
 ```
+
 
 The command line option `-l` is causing the terminal to print out the files containing the pattern `Germany`. This is useful for finding which files contain the word you are looking for. Going back to the `-n` command line option, if we didn't know how to use `*.txt`(example 2 of `-n`) this would be a good way to find every file that we could run with the `-n` to get an output (example 1 of `-n`). 
 
@@ -107,6 +110,7 @@ written_2/travel_guides/berlitz2/PuertoRico-History.txt
 written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
 written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
 ```
+
 
 Same reasoning as example 1 of `-l`
 
@@ -195,6 +199,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:1
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
 ```
 
+
 The command line option `-c` prints out how many lines per file are matching the pattern `English`. Useful for checking which files contain the pattern and how many times the pattern is repeated within that file. 
 
 ```
@@ -209,6 +214,7 @@ written_2/non-fiction/OUP/Kauffman/ch7.txt:1
 written_2/non-fiction/OUP/Kauffman/ch8.txt:2
 written_2/non-fiction/OUP/Kauffman/ch9.txt:0
 ```
+
 
 Same reasoning as example 1 of `-c`
 
@@ -244,6 +250,7 @@ On 20 June 1991, the city’s role at the hub of German life was assured when th
 secrets from its people.
 ```
 
+
 The `-w` command line option makes it so the pattern `German` has to match exactly with the words in the `.txt` files in order to be printed to the terminal. If we didn't put the `-w`, Germany could have been a possible word that triggered pattern. This is extremely useful for differentiating specific words that are roots of other words. 
 
 ```
@@ -257,5 +264,6 @@ written_2/travel_guides/berlitz2/Bali-WhereToGo.txt:West of Klungkung, a narrow 
 place in semi-darkness so that the workers can judge the temperature of the glowing metal by its color. In the village of Banda, about 5 km (3 miles) south of Tihinga, a museum celebrates one of Bali’s most successful contemporary artists, Nyoman Gunarsa.
 written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt:Jade. China’s most prized precious stone is also quite difficult to judge. Unless you are with an expert, buy only what you like at a price you can easily afford. Some jade is fake. Color, transparency, smoothness, and the skill of cutting determine the price. Check the Friendship Store first to see what you get for your money.
 ```
+
 
 Same reasoning as example 1 of `-w`
