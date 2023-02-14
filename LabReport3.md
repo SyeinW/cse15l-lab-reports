@@ -33,17 +33,80 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothe
 
 The command line option ` -n ` is doing the exact same thing as it was in example 1, except we are giving a slightly different argument. In this case, we don't defined a specific `.txt` file for it to look at. Instead, we give it a directory and then use `*.txt` to search every txt file in the `berlitz2` directory for the string argument `Lucayans` 
 
-
 ### grep -l
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
-``` ```
+```
+$ grep -l "Germany" written_2/travel_guides/berlitz2/*.txt
+written_2/travel_guides/berlitz2/Algarve-History.txt
+written_2/travel_guides/berlitz2/Amsterdam-History.txt
+written_2/travel_guides/berlitz2/Athens-History.txt
+written_2/travel_guides/berlitz2/Bali-History.txt
+written_2/travel_guides/berlitz2/Beijing-WhereToGo.txt
+written_2/travel_guides/berlitz2/Berlin-History.txt
+written_2/travel_guides/berlitz2/Berlin-WhatToDo.txt
+written_2/travel_guides/berlitz2/Berlin-WhereToGo.txt
+written_2/travel_guides/berlitz2/Boston-WhereToGo.txt
+written_2/travel_guides/berlitz2/Budapest-History.txt
+written_2/travel_guides/berlitz2/Canada-History.txt
+written_2/travel_guides/berlitz2/China-History.txt
+written_2/travel_guides/berlitz2/China-WhereToGo.txt
+written_2/travel_guides/berlitz2/CostaBlanca-History.txt
+written_2/travel_guides/berlitz2/Poland-History.txt
+written_2/travel_guides/berlitz2/Portugal-History.txt
+```
 
-What its doing and why its useful
+The command line option ` -l ` is causing the terminal to print out the files containing the string argument `Germany`. This is useful for finding which files contain the word you are looking for. Going back to the ` -n ` command line option, if we didn't know how to use `*.txt`(example 2 of `-n`) this would be a good way to find every file that we could run with the ` -n ` to get an output (example 1 of `-n`). 
 
-``` ```
-
-What its doing and why its useful
+``` 
+$ grep -l "English" written_2/travel_guides/berlitz2/*.txt
+written_2/travel_guides/berlitz2/Algarve-History.txt
+written_2/travel_guides/berlitz2/Algarve-WhatToDo.txt
+written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt
+written_2/travel_guides/berlitz2/Amsterdam-History.txt
+written_2/travel_guides/berlitz2/Amsterdam-Intro.txt
+written_2/travel_guides/berlitz2/Amsterdam-WhatToDo.txt
+written_2/travel_guides/berlitz2/Amsterdam-WhereToGo.txt
+written_2/travel_guides/berlitz2/Athens-History.txt
+written_2/travel_guides/berlitz2/Athens-WhatToDo.txt
+written_2/travel_guides/berlitz2/Bahamas-History.txt
+written_2/travel_guides/berlitz2/Bahamas-Intro.txt
+written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
+written_2/travel_guides/berlitz2/Bali-History.txt
+written_2/travel_guides/berlitz2/Barcelona-WhatToDo.txt
+written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt
+written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt
+written_2/travel_guides/berlitz2/Beijing-WhereToGo.txt
+written_2/travel_guides/berlitz2/Berlin-WhatToDo.txt
+written_2/travel_guides/berlitz2/Berlin-WhereToGo.txt
+written_2/travel_guides/berlitz2/Bermuda-history.txt
+written_2/travel_guides/berlitz2/Bermuda-WhereToGo.txt
+written_2/travel_guides/berlitz2/Boston-WhereToGo.txt
+written_2/travel_guides/berlitz2/Budapest-History.txt
+written_2/travel_guides/berlitz2/Budapest-WhatToDo.txt
+written_2/travel_guides/berlitz2/Budapest-WhereoGo.txt
+written_2/travel_guides/berlitz2/California-WhereToGo.txt
+written_2/travel_guides/berlitz2/Canada-History.txt
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
+written_2/travel_guides/berlitz2/CanaryIslands-WhereToGo.txt
+written_2/travel_guides/berlitz2/Cancun-WhereToGo.txt
+written_2/travel_guides/berlitz2/China-WhereToGo.txt
+written_2/travel_guides/berlitz2/Costa-History.txt
+written_2/travel_guides/berlitz2/Costa-WhatToDo.txt
+written_2/travel_guides/berlitz2/Costa-WhereToGo.txt
+written_2/travel_guides/berlitz2/Crete-WhereToGo.txt
+written_2/travel_guides/berlitz2/Cuba-History.txt
+written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
+written_2/travel_guides/berlitz2/NewOrleans-History.txt
+written_2/travel_guides/berlitz2/Paris-WhatToDo.txt
+written_2/travel_guides/berlitz2/Paris-WhereToGo.txt
+written_2/travel_guides/berlitz2/Poland-WhatToDo.txt
+written_2/travel_guides/berlitz2/Portugal-History.txt
+written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
+written_2/travel_guides/berlitz2/PuertoRico-History.txt
+written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
+written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
+```
 
 ### grep -c
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
