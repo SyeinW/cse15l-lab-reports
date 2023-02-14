@@ -23,7 +23,7 @@ his works, look for Abtei im Eichwald (Abbey in the Woods, 1809) and Der Mönch 
 233:Beside the lake, north of the town center is Neuer Garten, a pleasant English-style garden. It provides the perfect setting for Schloß Cecilienhof (1916), the ivy-covered, half-timbered pastiche of an English country manor built for Crown Prince Wilhelm and his wife. Winston Churchill, Joseph Stalin, and Harry Truman met here in July 1945 to draw up the Potsdam Agreement that fixed the division of Germany for the next 45 years. Today it’s a luxury hotel and restaurant.
 ```
 
-The ` -n ` command line option prints the lines that have the specified string (`Germany` in this case) and their line number. This is useful for finding the exact line number where the string argument orginates. Could be useful for citations and quick searching for quotes. 
+The ` -n ` command line option prints the lines that have the specified pattern (`Germany` in this case) and their line number. This is useful for finding the exact line number where the pattern orginates. Could be useful for citations and quick searching for quotes. 
 
 ```
 $ grep -n "Lucayans" written_2/travel_guides/berlitz2/*.txt
@@ -31,7 +31,7 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:6:Centuries before the arri
 written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
 
-The command line option ` -n ` is doing the exact same thing as it was in example 1, except we are giving a slightly different argument. In this case, we don't defined a specific `.txt` file for it to look at. Instead, we give it a directory and then use `*.txt` to search every txt file in the `berlitz2` directory for the string argument `Lucayans` 
+The command line option ` -n ` is doing the exact same thing as it was in example 1, except we are giving a slightly different argument. In this case, we don't defined a specific `.txt` file for it to look at. Instead, we give it a directory and then use `*.txt` to search every txt file in the `berlitz2` directory for the pattern `Lucayans` 
 
 ### grep -l
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
@@ -56,7 +56,7 @@ written_2/travel_guides/berlitz2/Poland-History.txt
 written_2/travel_guides/berlitz2/Portugal-History.txt
 ```
 
-The command line option ` -l ` is causing the terminal to print out the files containing the string argument `Germany`. This is useful for finding which files contain the word you are looking for. Going back to the ` -n ` command line option, if we didn't know how to use `*.txt`(example 2 of `-n`) this would be a good way to find every file that we could run with the ` -n ` to get an output (example 1 of `-n`). 
+The command line option ` -l ` is causing the terminal to print out the files containing the pattern `Germany`. This is useful for finding which files contain the word you are looking for. Going back to the ` -n ` command line option, if we didn't know how to use `*.txt`(example 2 of `-n`) this would be a good way to find every file that we could run with the ` -n ` to get an output (example 1 of `-n`). 
 
 ``` 
 $ grep -l "English" written_2/travel_guides/berlitz2/*.txt
@@ -108,7 +108,7 @@ written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
 written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
 ```
 
-Same reasoning as example 1 for both, what its doing and why its useful
+Same reasoning as example 1 of `-l`
 
 ### grep -c
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
@@ -195,7 +195,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:1
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
 ```
 
-The command line option ` -c ` prints out how many lines per file are matching the string argument `English`. Useful for checking which files contain the string argument and how many times they are repeated within that file. 
+The command line option ` -c ` prints out how many lines per file are matching the pattern `English`. Useful for checking which files contain the pattern and how many times the pattern is repeated within that file. 
 
 ```
 $ grep -c "Biosphere" written_2/non-fiction/OUP/Kauffman/*.txt
@@ -210,15 +210,52 @@ written_2/non-fiction/OUP/Kauffman/ch8.txt:2
 written_2/non-fiction/OUP/Kauffman/ch9.txt:0
 ```
 
-Same reasoning as example 1
+Same reasoning as example 1 of `-c`
 
-### grep -o
+### grep -w
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
-``` ```
+```
+$ grep -w "German" written_2/travel_guides/berlitz2/Berlin-History.txt 
+The German capital became a municipality during the 1200s, ironically as a divided city. In those days the two rival halves were in no rush to unite. The fishermen of Cölln, whose name survives in the modern borough of Neukölln, lived on an island in the River Spree. The townships that comprise the modern Mitte district grew up around market places over which the people’s churches, the Nikolaikirche and Marienkirche, still tower today. With the fortress of Burg Köpenick providing a common defense to the south, Cölln and Berlin formed a trade center between Magdeburg and Poznan.
+In a region inhabited by the Slavonic Sorbs, the population of the city was overwhelmingly German by the 13th century, comprising enterprising merchants hailing from the northern Rhineland, Westphalia, and Lower Saxony, with 
+latecomers from Thuringia and the Harz. Berlin and Cölln came together in 1307 in order to lead the Brandenburg region’s defenses and defeat the robber barons who were terrorizing merchants and local peasants. The prosperous 
+city joined the Hanseatic League, trading in rye, wool, and oak timber and providing an entrepôt for skins and furs from eastern Europe. Apparently living was easy in the 15th century, as historian Trithemius noted: “Life here consists of nothing but eating and drinking.”
+Berlin continued as a virtually autonomous outpost of the German empire until 1448, when Brandenburg’s Kurfürst (Prince Elector) Friedrich II took over control of the city after crushing the citizens’ violent resistance, the 
+so-called Berliner Unwillen. He was a member of the Hohenzollern dynasty that was to hold sway here for over 450 years.
+The independent spirit of the Berliners was felt during the Reformation in the 16th century. The people were tired of paying the tribute exacted by the Catholic church. In 1539, at a time when citizens of the other German principalities had to observe the religion of their prince, Berliners were successful in pressuring Prince Elector Joachim II to accept the Protestant creed as preached by Martin Luther.
+Friedrich der Große (Frederick the Great, 1740–1786), King of (not just in) Prussia, took his realm to the forefront of European politics and had little time for Berlin. He concentrated on turning his beloved Potsdam into a mini-Versailles, where French was spoken and Voltaire became his official philosopher-in-residence. He rarely appeared in Berlin except to garner public support — and taxes — after his return from costly wars with the Silesians, Russians, and Austrians. He did, nevertheless, leave the German capital an enduring legacy with the monumental Forum Fridericianum laid out on Unter den Linden by his architect von Knobelsdorff.
+The armies of Frederick’s successors proved to be no match for Napoleon’s Grande Armée, however, and as the French advanced through eastern Germany in 1806, Berlin’s bureaucracy, court, and bourgeoisie fled to the country. No troops were left to defend the city from its invaders, and Napoleon’s march through the Brandenburg Gate into Berlin kindled a new flame of German patriotism.
+Defying the two-year French occupation, philosopher Johann Gottlieb Fichte exhorted the German people to assume their rightful destiny as a nation. Drummers were ordered to drown out his fiery speeches at the Royal Academy.  
+After that philistine period of rapid growth, the city at last began to assume its place as Germany’s cultural as well as political capital, with Berlin artists Max Liebermann, Lovis Corinth, and Max Slevogt challenging Munich’s dominance of German painting. The Berlin Philharmonic asserted an international prestige, attracting Tchaikovsky, Strauss, and Grieg as guest composers, and in 1905, the great Viennese director Max Reinhardt arrived to head the Deutsches Theater.
+Privations at home and the horrendous loss of life on the front turned popular feeling against the war. In 1916, Karl Liebknecht and Rosa Luxemburg formed the Spartacus League. Two years later, with Germany defeated and insurrections in Kiel, Munich, Hamburg, and Stuttgart, revolution broke out in Berlin. While the Social Democrats were proclaiming a new German Republic, Liebknecht took over the palace declaring the Republic socialist, with “supreme authority for the workers and soldiers.”
+The conservative establishment winced when the Prussian Writers’ Academy chose as its president Heinrich Mann, the elder brother of Thomas Mann, a violent critic of the German bourgeoisie and supporter of the Communist Party. His best-known novel, Professor Unrat, inspired Josef von Sternberg’s The Blue Angel, the film that revealed the vocal talents of Marlene Dietrich.
+Berlin was going through a wild time, but the Versailles peace treaty had laid heavy burdens on the nation. At the start of the twenties, inflation had made little more than nonsense of the German currency, and political assassinations became routine. The most significant of the victims was foreign minister Walther Rathenau, an enlightened democrat and Jew who was killed near the Grunewald forest. It was also the time of vicious street battles between Communists and Nazis, exploiting the social disruptions of inflation and unemployment that were impossible to ignore.
+Communist hostility towards the Social Democrats split the opposition to the Nazis. Hitler became Chancellor on 30 January 1933. Only a month later, on 27 February, the Reichstag went up in flames. Hitler used the fire as a pretext to eliminate Communist and all left-wing opposition from German political life. The Nazi reign of terror had begun.
+Discrimination against Jews moved inexorably to the night of 9 November 1938, when synagogues and other Jewish-owned buildings were burned. In the midst of the smashed glass of the looted shops, German wit eased the discomfort by referring to the event as Kristallnacht (Crystal Night). Berlin’s Jewish population, which stood at 170,000 in 1933, was reduced by emigration and extermination to around 6,000 by 1945.
+Their disquiet was shortly to be justified by the hail of bombs on the capital. The first attacks came in 1940 from the British in retaliation for the air raids on London. Attacks were stepped up after the German defeat at Stalingrad in 1943, with Anglo-American “carpet-bombing.” The worst single raid was on 6 February 1945, when bombs wiped out 4 sq km (1 1⁄2 sq miles) of the city center in one hour.
+The war ended with unconditional German surrender on 8 May 1945. In Berlin, the population was left to pick up the pieces — literally. Women formed groups of Trümmerfrauen (rubble women), with 60,000 of them passing the debris of war by hand to clear ground for rebuilding. Eventually there was sufficient rubble to create a few artificial mountains. One of them, Teufelsberg in the Grunewald, is big enough to ski on.
+Hard political realities soon developed from these administrative divisions, as the Allies found themselves confronted with Soviet efforts to incorporate the whole of Berlin into a new Communist-controlled German Democratic Republic. In the 1946 municipal elections — Berlin’s first free vote since 1933, and its last until 1990 — the Social Democrats won a crushing victory over the Communists, prompting the Soviets to tighten their grip on the eastern sector. Understandably unhappy that West Berlin’s capitalist presence in the middle of East Germany was having a subversive influence on the Communist experiment, the Soviets and their East German allies began to restrict traffic from West Germany. In June 1948, all road, rail, and waterway routes to West Berlin were sealed off. From bases in Frankfurt, Hamburg, and Hanover, the Western Allies countered the blockade by airlifting into Berlin between 4,000 and 8,000 tons of food and other vital supplies every day for 11 months. The blockade finally ended in May 1949, and West Berlin became a Land linked administratively with, but thus far not politically incorporated into, the new Federal Republic of Germany. East Berlin was made capital of the fledgling German Democratic Republic.
+In the early hours of 13 August 1961, East German workers and soldiers began to erect the wall that would separate East and West Berlin and change the lives of several million people for nearly 30 years. The wall started out 
+as barbed wire and road blocks, but refugees continued to make their way through the barriers, by swimming through sewers and canals and jumping from buildings and railway bridges — risking life and limb for freedom and democracy. Soon, huge slabs of reinforced concrete and tank-traps formed a more impenetrable barrier. Crossing points were established for foreigners and for West Germans, but not for Berliners, until a tiny few were allowed across much later in the Cold War confrontation.
+The erection of the Wall did significantly reduce the flow of refugees to a few isolated escapes, but the East German economy suffered even more from the assaults of massive mismanagement and high-level corruption. Erich Honecker’s regime won international diplomatic recognition for East Berlin as its capital and, with gleaming hotels and skyscrapers, tried to give it a lustre to rival West Berlin. Beneath the surface, however, the drabness of daily life and lack of personal freedom continued to undermine any chance of popular support.
+The final push which led to the collapse of the Berlin Wall came when an ecological campaign in Leipzig against nuclear weapons and industrial pollution grew into nationwide pressure for democratic freedom. In 1989, with thousands of East Germans fleeing to the West via Hungary, Czechoslovakia, and Poland, the country was swept up in the wave of eastern European revolutions unleashed by the reforms of Soviet leader Mikhail Gorbachev. His visit to East Berlin in October 1989 for the 40th anniversary of the German Democratic Republic left it clear that Soviet troops would no longer shore up its regime. The Berlin Wall was opened on 9 November 1989, and at midnight on 3 October 1990, a huge black, red, and gold national flag was hoisted at the Reichstag. East and West Berlin were again one.
+On 20 June 1991, the city’s role at the hub of German life was assured when the Bundestag voted by a slim majority to restore Berlin as the seat of government. In May 1999 a federal President was elected at the Reichstag and, in August that year, government business again began to be conducted from Berlin. The Reichstag was transformed by the addition of a vast glass dome, designed by Sir Norman Foster, to symbolize that the new Germany keeps no 
+secrets from its people.
+```
 
-What its doing and why its useful
+The `-w` command line option makes it so the pattern `German` has to match exactly with the words in the `.txt` files in order to be printed to the terminal. If we didn't put the `-w`, Germany could have been a possible word that triggered pattern. This is extremely useful for differentiating specific words that are roots of other words. 
 
-``` ```
+```
+$ grep -w "judge" written_2/*/*/*.txt
+written_2/travel_guides/berlitz1/WhatToMalaysia.txt:        contests judge competitors on their most spectacular flying
+written_2/travel_guides/berlitz1/WhereToJerusalem.txt:        the grave of the 15th-century Muslim judge and historian, Mujr el-Din.
+written_2/travel_guides/berlitz1/WhereToMadeira.txt:        in itself. Madeira’s microclimates are very difficult to judge,
+written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt:Olhão has often been described as the “little white Cubist town of the Algarve,” its architecture likened to that of North African towns. That may have been the case some years ago, but modern development has strongly interfered with its once distinctive appearance. You can judge for yourself by ascending the bell tower of the parish church (which also goes by the name of Nossa Senhora do Rosário), which you will find by winding your way through the narrow streets back to the Praça da Restauração (you may have to ask for access to the tower in the sacristy). Founded by King Dom Pedro II in 1698, the church has an impressive, scroll-decorated Baroque façade, brilliant white dome, stone belltower, and a chapel at the rear, Nossa Senhora dos Aflitos (Our Lady of the Afflicted), where women often pray when their fishermen husbands are away at sea.
+written_2/travel_guides/berlitz2/Bali-WhatToDo.txt:Paintings: If you want a unique work of art, you’ll need to study the field. Visit the major collections to judge the standard of the best paintings, especially the Neka Museum and Museum Puri Lukisan in Ubud (see page 41) as well as the Arts Centre in Denpasar (see page 37). Don’t just assume that a high price guarantees original work.
+written_2/travel_guides/berlitz2/Bali-WhereToGo.txt:West of Klungkung, a narrow lane leads to the village of Tihingan, one of only two places in Bali where the gongs for gamelan orchestras are made. The other is Sawan, near the north coast (see page 65). In any of the bronze foundries, you’ll find the same medieval scene, with a boy apprentice pumping the bellows to keep a charcoal fire blazing while the smiths hammer away. Hanging mats keep the 
+place in semi-darkness so that the workers can judge the temperature of the glowing metal by its color. In the village of Banda, about 5 km (3 miles) south of Tihinga, a museum celebrates one of Bali’s most successful contemporary artists, Nyoman Gunarsa.
+written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt:Jade. China’s most prized precious stone is also quite difficult to judge. Unless you are with an expert, buy only what you like at a price you can easily afford. Some jade is fake. Color, transparency, smoothness, and the skill of cutting determine the price. Check the Friendship Store first to see what you get for your money.
+```
 
-What its doing and why its useful
+Same reasoning as example 1 of `-w`
