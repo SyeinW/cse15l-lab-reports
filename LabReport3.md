@@ -23,7 +23,7 @@ his works, look for Abtei im Eichwald (Abbey in the Woods, 1809) and Der Mönch 
 233:Beside the lake, north of the town center is Neuer Garten, a pleasant English-style garden. It provides the perfect setting for Schloß Cecilienhof (1916), the ivy-covered, half-timbered pastiche of an English country manor built for Crown Prince Wilhelm and his wife. Winston Churchill, Joseph Stalin, and Harry Truman met here in July 1945 to draw up the Potsdam Agreement that fixed the division of Germany for the next 45 years. Today it’s a luxury hotel and restaurant.
 ```
 
-The ` -n ` command line option prints the lines that have the specified pattern (`Germany` in this case) and their line number. This is useful for finding the exact line number where the pattern orginates. Could be useful for citations and quick searching for quotes. 
+The `-n` command line option prints the lines that have the specified pattern (`Germany` in this case) and their line number. This is useful for finding the exact line number where the pattern orginates. Could be useful for citations and quick searching for quotes. 
 
 ```
 $ grep -n "Lucayans" written_2/travel_guides/berlitz2/*.txt
