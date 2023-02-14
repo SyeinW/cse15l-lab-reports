@@ -267,5 +267,4 @@ place in semi-darkness so that the workers can judge the temperature of the glow
 written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt:Jade. China’s most prized precious stone is also quite difficult to judge. Unless you are with an expert, buy only what you like at a price you can easily afford. Some jade is fake. Color, transparency, smoothness, and the skill of cutting determine the price. Check the Friendship Store first to see what you get for your money.
 ```
 
-
 Same reasoning as example 1 of `-w`
