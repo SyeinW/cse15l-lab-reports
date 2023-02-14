@@ -6,6 +6,8 @@ Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ``` ```
 
+What its doing and why its useful
+
 ``` ```
 
 What its doing and why its useful
@@ -14,6 +16,8 @@ What its doing and why its useful
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ``` ```
+
+What its doing and why its useful
 
 ``` ```
 
@@ -24,6 +28,8 @@ Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ``` ```
 
+What its doing and why its useful
+
 ``` ```
 
 What its doing and why its useful
@@ -32,6 +38,8 @@ What its doing and why its useful
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ``` ```
+
+What its doing and why its useful
 
 ``` ```
 
