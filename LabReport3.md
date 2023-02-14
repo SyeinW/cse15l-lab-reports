@@ -1,7 +1,7 @@
 # Lab Report 3
 ## grep command-line options
 
-### grep
+### grep -n
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ``` ```
