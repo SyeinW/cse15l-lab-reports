@@ -108,16 +108,109 @@ written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
 written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
 ```
 
+Same reasoning as example 1 for both, what its doing and why its useful
+
 ### grep -c
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
-``` ```
+``` 
+$ grep -c "English" written_2/travel_guides/berlitz2/*.txt
+written_2/travel_guides/berlitz2/Algarve-History.txt:1
+written_2/travel_guides/berlitz2/Algarve-Intro.txt:0
+written_2/travel_guides/berlitz2/Algarve-WhatToDo.txt:3
+written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt:4
+written_2/travel_guides/berlitz2/Amsterdam-History.txt:3
+written_2/travel_guides/berlitz2/Amsterdam-Intro.txt:1
+written_2/travel_guides/berlitz2/Amsterdam-WhatToDo.txt:3
+written_2/travel_guides/berlitz2/Amsterdam-WhereToGo.txt:3
+written_2/travel_guides/berlitz2/Athens-History.txt:1
+written_2/travel_guides/berlitz2/Athens-Intro.txt:0
+written_2/travel_guides/berlitz2/Athens-WhatToDo.txt:1
+written_2/travel_guides/berlitz2/Athens-WhereToGo.txt:0
+written_2/travel_guides/berlitz2/Bahamas-History.txt:4
+written_2/travel_guides/berlitz2/Bahamas-Intro.txt:3
+written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt:5
+written_2/travel_guides/berlitz2/Bali-History.txt:1
+written_2/travel_guides/berlitz2/Bali-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Bali-WhereToGo.txt:0
+written_2/travel_guides/berlitz2/Barcelona-History.txt:0
+written_2/travel_guides/berlitz2/Barcelona-WhatToDo.txt:1
+written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt:4
+written_2/travel_guides/berlitz2/Beijing-History.txt:0
+written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt:6
+written_2/travel_guides/berlitz2/Beijing-WhereToGo.txt:3
+written_2/travel_guides/berlitz2/Berlin-History.txt:0
+written_2/travel_guides/berlitz2/Berlin-WhatToDo.txt:2
+written_2/travel_guides/berlitz2/Berlin-WhereToGo.txt:5
+written_2/travel_guides/berlitz2/Bermuda-history.txt:4
+written_2/travel_guides/berlitz2/Bermuda-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Bermuda-WhereToGo.txt:2
+written_2/travel_guides/berlitz2/Boston-WhereToGo.txt:3
+written_2/travel_guides/berlitz2/Budapest-History.txt:1
+written_2/travel_guides/berlitz2/Budapest-WhatToDo.txt:2
+written_2/travel_guides/berlitz2/Budapest-WhereoGo.txt:3
+written_2/travel_guides/berlitz2/California-History.txt:0
+written_2/travel_guides/berlitz2/California-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/California-WhereToGo.txt:1
+written_2/travel_guides/berlitz2/Canada-History.txt:6
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt:26
+written_2/travel_guides/berlitz2/CanaryIslands-History.txt:0
+written_2/travel_guides/berlitz2/CanaryIslands-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/CanaryIslands-WhereToGo.txt:4
+written_2/travel_guides/berlitz2/Cancun-History.txt:0
+written_2/travel_guides/berlitz2/Cancun-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Cancun-WhereToGo.txt:2
+written_2/travel_guides/berlitz2/China-History.txt:0
+written_2/travel_guides/berlitz2/China-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/China-WhereToGo.txt:6
+written_2/travel_guides/berlitz2/CostaBlanca-History.txt:0
+written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Costa-History.txt:1
+written_2/travel_guides/berlitz2/Costa-WhatToDo.txt:1
+written_2/travel_guides/berlitz2/Costa-WhereToGo.txt:4
+written_2/travel_guides/berlitz2/Crete-History.txt:0
+written_2/travel_guides/berlitz2/Crete-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Crete-WhereToGo.txt:1
+written_2/travel_guides/berlitz2/CstaBlanca-WhereToGo.txt:0
+written_2/travel_guides/berlitz2/Cuba-History.txt:1
+written_2/travel_guides/berlitz2/Cuba-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt:4
+written_2/travel_guides/berlitz2/Nepal-History.txt:0
+written_2/travel_guides/berlitz2/Nepal-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Nepal-WhereToGo.txt:0
+written_2/travel_guides/berlitz2/NewOrleans-History.txt:1
+written_2/travel_guides/berlitz2/Paris-WhatToDo.txt:2
+written_2/travel_guides/berlitz2/Paris-WhereToGo.txt:3
+written_2/travel_guides/berlitz2/Poland-History.txt:0
+written_2/travel_guides/berlitz2/Poland-WhatToDo.txt:2
+written_2/travel_guides/berlitz2/Portugal-History.txt:2
+written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt:6
+written_2/travel_guides/berlitz2/PuertoRico-History.txt:2
+written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt:4
+written_2/travel_guides/berlitz2/Vallarta-History.txt:0
+written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:1
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
+```
 
-What its doing and why its useful
+The command line option ` -c ` prints out how many lines per file are matching the string argument `English`. Useful for checking which files contain the string argument and how many times they are repeated within that file. 
 
-``` ```
+```
+$ grep -c "Biosphere" written_2/non-fiction/OUP/Kauffman/*.txt
+written_2/non-fiction/OUP/Kauffman/ch1.txt:3
+written_2/non-fiction/OUP/Kauffman/ch10.txt:0
+written_2/non-fiction/OUP/Kauffman/ch3.txt:0
+written_2/non-fiction/OUP/Kauffman/ch4.txt:0
+written_2/non-fiction/OUP/Kauffman/ch5.txt:0
+written_2/non-fiction/OUP/Kauffman/ch6.txt:1
+written_2/non-fiction/OUP/Kauffman/ch7.txt:1
+written_2/non-fiction/OUP/Kauffman/ch8.txt:2
+written_2/non-fiction/OUP/Kauffman/ch9.txt:0
+```
 
-What its doing and why its useful
+Same reasoning as example 1
 
 ### grep -o
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
