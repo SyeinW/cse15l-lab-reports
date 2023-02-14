@@ -221,8 +221,8 @@ Same reasoning as example 1 of `-c`
 ### grep -w
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
-```
-$ grep -w "German" written_2/travel_guides/berlitz2/Berlin-History.txt 
+
+``` $ grep -w "German" written_2/travel_guides/berlitz2/Berlin-History.txt 
 The German capital became a municipality during the 1200s, ironically as a divided city. In those days the two rival halves were in no rush to unite. The fishermen of Cölln, whose name survives in the modern borough of Neukölln, lived on an island in the River Spree. The townships that comprise the modern Mitte district grew up around market places over which the people’s churches, the Nikolaikirche and Marienkirche, still tower today. With the fortress of Burg Köpenick providing a common defense to the south, Cölln and Berlin formed a trade center between Magdeburg and Poznan.
 In a region inhabited by the Slavonic Sorbs, the population of the city was overwhelmingly German by the 13th century, comprising enterprising merchants hailing from the northern Rhineland, Westphalia, and Lower Saxony, with 
 latecomers from Thuringia and the Harz. Berlin and Cölln came together in 1307 in order to lead the Brandenburg region’s defenses and defeat the robber barons who were terrorizing merchants and local peasants. The prosperous 
@@ -247,14 +247,14 @@ as barbed wire and road blocks, but refugees continued to make their way through
 The erection of the Wall did significantly reduce the flow of refugees to a few isolated escapes, but the East German economy suffered even more from the assaults of massive mismanagement and high-level corruption. Erich Honecker’s regime won international diplomatic recognition for East Berlin as its capital and, with gleaming hotels and skyscrapers, tried to give it a lustre to rival West Berlin. Beneath the surface, however, the drabness of daily life and lack of personal freedom continued to undermine any chance of popular support.
 The final push which led to the collapse of the Berlin Wall came when an ecological campaign in Leipzig against nuclear weapons and industrial pollution grew into nationwide pressure for democratic freedom. In 1989, with thousands of East Germans fleeing to the West via Hungary, Czechoslovakia, and Poland, the country was swept up in the wave of eastern European revolutions unleashed by the reforms of Soviet leader Mikhail Gorbachev. His visit to East Berlin in October 1989 for the 40th anniversary of the German Democratic Republic left it clear that Soviet troops would no longer shore up its regime. The Berlin Wall was opened on 9 November 1989, and at midnight on 3 October 1990, a huge black, red, and gold national flag was hoisted at the Reichstag. East and West Berlin were again one.
 On 20 June 1991, the city’s role at the hub of German life was assured when the Bundestag voted by a slim majority to restore Berlin as the seat of government. In May 1999 a federal President was elected at the Reichstag and, in August that year, government business again began to be conducted from Berlin. The Reichstag was transformed by the addition of a vast glass dome, designed by Sir Norman Foster, to symbolize that the new Germany keeps no 
-secrets from its people.
-```
+secrets from its people. 
+``` 
 
 
 The `-w` command line option makes it so the pattern `German` has to match exactly with the words in the `.txt` files in order to be printed to the terminal. If we didn't put the `-w`, Germany could have been a possible word that triggered pattern. This is extremely useful for differentiating specific words that are roots of other words. 
 
-```
-$ grep -w "judge" written_2/*/*/*.txt
+
+``` $ grep -w "judge" written_2/*/*/*.txt
 written_2/travel_guides/berlitz1/WhatToMalaysia.txt:        contests judge competitors on their most spectacular flying
 written_2/travel_guides/berlitz1/WhereToJerusalem.txt:        the grave of the 15th-century Muslim judge and historian, Mujr el-Din.
 written_2/travel_guides/berlitz1/WhereToMadeira.txt:        in itself. Madeira’s microclimates are very difficult to judge,
