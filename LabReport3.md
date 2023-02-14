@@ -222,7 +222,8 @@ Same reasoning as example 1 of `-c`
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 
-``` $ grep -w "German" written_2/travel_guides/berlitz2/Berlin-History.txt 
+``` 
+$ grep -w "German" written_2/travel_guides/berlitz2/Berlin-History.txt 
 The German capital became a municipality during the 1200s, ironically as a divided city. In those days the two rival halves were in no rush to unite. The fishermen of Cölln, whose name survives in the modern borough of Neukölln, lived on an island in the River Spree. The townships that comprise the modern Mitte district grew up around market places over which the people’s churches, the Nikolaikirche and Marienkirche, still tower today. With the fortress of Burg Köpenick providing a common defense to the south, Cölln and Berlin formed a trade center between Magdeburg and Poznan.
 In a region inhabited by the Slavonic Sorbs, the population of the city was overwhelmingly German by the 13th century, comprising enterprising merchants hailing from the northern Rhineland, Westphalia, and Lower Saxony, with 
 latecomers from Thuringia and the Harz. Berlin and Cölln came together in 1307 in order to lead the Brandenburg region’s defenses and defeat the robber barons who were terrorizing merchants and local peasants. The prosperous 
@@ -254,7 +255,8 @@ secrets from its people.
 The `-w` command line option makes it so the pattern `German` has to match exactly with the words in the `.txt` files in order to be printed to the terminal. If we didn't put the `-w`, Germany could have been a possible word that triggered pattern. This is extremely useful for differentiating specific words that are roots of other words. 
 
 
-``` $ grep -w "judge" written_2/*/*/*.txt
+``` 
+$ grep -w "judge" written_2/*/*/*.txt
 written_2/travel_guides/berlitz1/WhatToMalaysia.txt:        contests judge competitors on their most spectacular flying
 written_2/travel_guides/berlitz1/WhereToJerusalem.txt:        the grave of the 15th-century Muslim judge and historian, Mujr el-Din.
 written_2/travel_guides/berlitz1/WhereToMadeira.txt:        in itself. Madeira’s microclimates are very difficult to judge,
