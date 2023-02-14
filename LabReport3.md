@@ -31,7 +31,7 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:6:Centuries before the arri
 written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
 
-The command line option ` -n ` is doing the exact same thing as it was in example 1, except we are giving a slightly different argument. In this case, we don't defined a specific `.txt` file for it to look at. Instead, we give it a directory and then use `*.txt` to search every txt file in the `berlitz2` directory for the pattern `Lucayans` 
+The command line option `-n` is doing the exact same thing as it was in example 1, except we are giving a slightly different argument. In this case, we don't defined a specific `.txt` file for it to look at. Instead, we give it a directory and then use `*.txt` to search every txt file in the `berlitz2` directory for the pattern `Lucayans` 
 
 ### grep -l
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
@@ -56,7 +56,7 @@ written_2/travel_guides/berlitz2/Poland-History.txt
 written_2/travel_guides/berlitz2/Portugal-History.txt
 ```
 
-The command line option ` -l ` is causing the terminal to print out the files containing the pattern `Germany`. This is useful for finding which files contain the word you are looking for. Going back to the ` -n ` command line option, if we didn't know how to use `*.txt`(example 2 of `-n`) this would be a good way to find every file that we could run with the ` -n ` to get an output (example 1 of `-n`). 
+The command line option `-l` is causing the terminal to print out the files containing the pattern `Germany`. This is useful for finding which files contain the word you are looking for. Going back to the `-n` command line option, if we didn't know how to use `*.txt`(example 2 of `-n`) this would be a good way to find every file that we could run with the `-n` to get an output (example 1 of `-n`). 
 
 ``` 
 $ grep -l "English" written_2/travel_guides/berlitz2/*.txt
@@ -195,7 +195,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:1
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
 ```
 
-The command line option ` -c ` prints out how many lines per file are matching the pattern `English`. Useful for checking which files contain the pattern and how many times the pattern is repeated within that file. 
+The command line option `-c` prints out how many lines per file are matching the pattern `English`. Useful for checking which files contain the pattern and how many times the pattern is repeated within that file. 
 
 ```
 $ grep -c "Biosphere" written_2/non-fiction/OUP/Kauffman/*.txt
