@@ -8,16 +8,22 @@ I opened the terminal in VScode using `<ctrl> + <grave>`. Then I logged into the
 
 ## Step 5 (Clone your fork of the repository from your Github account)
 ![image](https://user-images.githubusercontent.com/113940184/221775444-83cc423d-b7a1-4bbf-8299-838eb81f2a5b.png)
+
 On my github page for the forked repository, I clicked the button labelled "code" and then went into the "ssh" tab. In that tab I copied the ssh link "git@gith...". 
 ![image](https://user-images.githubusercontent.com/113940184/221774093-e1d36b88-528f-467c-ba8a-95c8acf3dc70.png)
+
 Using the ssh linked I copied earlier, I typed `git clone git@github.com:SyeinW/lab7.git` and pressed `<enter>`. I did this so that I could clone the repository to the remove server I was working on. 
 
 
 ## Step 6 (Run the tests, demonstrating that they fail)
 ![image](https://user-images.githubusercontent.com/113940184/221774464-d0d0d81b-86ee-459f-8306-4468c22dd20a.png)
+
 After copying the repository I had to cd into it, since I was currently in my home directory. I used the command `cd lab7/` to make lab7 my active directory. 
+
 I copied and pasted the command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` using `<ctrl> + c>`, followed by `<ctrl> + v`, followed by `<enter>`. I got the command from the week 7 lab report section. 
+
 I copied and pasted the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore` using `<ctrl> + c>`, followed by `<ctrl> + v`. I got the command from the week 7 lab report section. Then used `<tab> + <tab>` to show all the files in my current directory as I recall the name of the file I needed. Then I typed `L + <tab> + T + <tab>`, followed by `<enter>`. 
+
 Just as expected, one of the two tests failed.
 
 
