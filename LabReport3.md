@@ -38,7 +38,7 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothe
 The command line option `-n` is doing the exact same thing as it was in example 1, except we are giving a slightly different argument. In this case, we don't defined a specific `.txt` file for it to look at. Instead, we give it a directory and then use `*.txt` to search every txt file in the `berlitz2` directory for the pattern `Lucayans` 
 
 ### grep -l
-Explanation: ``` grep -l``` returns the names of the files that contain the pattern instead of the lines.
+Explanation: ```grep -l``` returns the names of the files that contain the pattern instead of the lines.
 
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
@@ -119,7 +119,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
 Same reasoning as example 1 of `-l`
 
 ### grep -c
-Explanation: Terminal will return the path followed by the number of times pattern appeared within that specific input file.
+Explanation: ```grep -c``` will return the path followed by the number of times pattern appeared within that specific input file.
 
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
