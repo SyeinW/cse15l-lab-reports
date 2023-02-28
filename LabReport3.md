@@ -2,6 +2,7 @@
 ## grep command-line options
 
 ### grep -n
+Usage: ```grep -n``` returns the line number that contains the text pattern, followed by the line itself. It does this for every line that contains the text pattern.
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ```
@@ -36,6 +37,7 @@ written_2/travel_guides/berlitz2/Bahamas-History.txt:7:The Spaniards never bothe
 The command line option `-n` is doing the exact same thing as it was in example 1, except we are giving a slightly different argument. In this case, we don't defined a specific `.txt` file for it to look at. Instead, we give it a directory and then use `*.txt` to search every txt file in the `berlitz2` directory for the pattern `Lucayans` 
 
 ### grep -l
+Explanation: ``` grep -l``` returns the names of the files that contain the pattern instead of the lines.
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ```
@@ -59,7 +61,7 @@ written_2/travel_guides/berlitz2/Portugal-History.txt
 ```
 
 
-The command line option `-l` is causing the terminal to print out the files containing the pattern `Germany`. This is useful for finding which files contain the word you are looking for. Going back to the `-n` command line option, if we didn't know how to use `*.txt`(example 2 of `-n`) this would be a good way to find every file that we could run with the `-n` to get an output (example 1 of `-n`). 
+The command line option `-l` is causing the terminal to print out the files containing the pattern `Germany`. This is useful when you only want to know if a file contains the pattern, rather than actually seeing the whole line. If we used ```grep``` our terminal would have been overrun with hundreds of lines, by using ```grep -l``` we are able to look solely at which paths contain the pattern. Going back to the `-n` command line option, if we didn't know how to use `*.txt`(example 2 of `-n`) this would be a good way to find every file that we could run with the `-n` to get an output (example 1 of `-n`). 
 
 ``` 
 $ grep -l "English" written_2/travel_guides/berlitz2/*.txt
@@ -115,6 +117,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
 Same reasoning as example 1 of `-l`
 
 ### grep -c
+Explanation: Terminal will return the path followed by the number of times pattern appeared within that specific input file.
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ``` 
@@ -200,7 +203,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:0
 ```
 
 
-The command line option `-c` prints out how many lines per file are matching the pattern `English`. Useful for checking which files contain the pattern and how many times the pattern is repeated within that file. 
+The command line option `-c` prints out how many lines per file are matching the pattern `English`. grep -c is useful when we don't care where the pattern occurs within the text file, but how many times it occurs. Ex: we want to have 4 if statements in a text file, but there is an arbitrary large amount of lines of code, we can use ```grep -c``` to make sure there are only 4 if statements. We can also use it for data collection, as if we wanted to know how many times the word "one" occured, it is much easier to read the path name + the occurence number, then something like grep -n where we have to seen the entire line. 
 
 ```
 $ grep -c "Biosphere" written_2/non-fiction/OUP/Kauffman/*.txt
@@ -219,6 +222,7 @@ written_2/non-fiction/OUP/Kauffman/ch9.txt:0
 Same reasoning as example 1 of `-c`
 
 ### grep -w
+Explanation: ```grep -w``` returns lines that have the exact pattern, so if the pattern x is a root word for another word y, then the word y would not be displayed in the terminal. 
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 
