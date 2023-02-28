@@ -3,6 +3,7 @@
 
 ### grep -n
 Usage: ```grep -n``` returns the line number that contains the text pattern, followed by the line itself. It does this for every line that contains the text pattern.
+
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ```
@@ -38,6 +39,7 @@ The command line option `-n` is doing the exact same thing as it was in example 
 
 ### grep -l
 Explanation: ``` grep -l``` returns the names of the files that contain the pattern instead of the lines.
+
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ```
@@ -118,6 +120,7 @@ Same reasoning as example 1 of `-l`
 
 ### grep -c
 Explanation: Terminal will return the path followed by the number of times pattern appeared within that specific input file.
+
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 ``` 
@@ -223,6 +226,7 @@ Same reasoning as example 1 of `-c`
 
 ### grep -w
 Explanation: ```grep -w``` returns lines that have the exact pattern, so if the pattern x is a root word for another word y, then the word y would not be displayed in the terminal. 
+
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
 
