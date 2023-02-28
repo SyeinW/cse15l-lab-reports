@@ -47,3 +47,6 @@ Now instead of there being a failure, both tests passed.
 
 ## Step 9 (Commit and push the resulting change to your Github account)
 ![image](https://user-images.githubusercontent.com/113940184/221777071-74872c3e-465a-4a76-9b8d-e7030c4027ae.png)
+I typed the command `git add ListExamples.java`, followed by `git commit -m "fixed`, finally followed by `git push`.
+
+`git add` tells git that I want to update `ListExamples.java` the next time `git commit` is called. `git commit -m "fixed"` commits the updates to the local repository along with the message "fixed". `git push` updates the remote repository using the local repository. 
