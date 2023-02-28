@@ -10,6 +10,7 @@ I opened the terminal in VScode using `<ctrl> + <grave>`. Then I logged into the
 ![image](https://user-images.githubusercontent.com/113940184/221775444-83cc423d-b7a1-4bbf-8299-838eb81f2a5b.png)
 
 On my github page for the forked repository, I clicked the button labelled "code" and then went into the "ssh" tab. In that tab I copied the ssh link "git@gith...". 
+
 ![image](https://user-images.githubusercontent.com/113940184/221774093-e1d36b88-528f-467c-ba8a-95c8acf3dc70.png)
 
 Using the ssh linked I copied earlier, I typed `git clone git@github.com:SyeinW/lab7.git` and pressed `<enter>`. I did this so that I could clone the repository to the remove server I was working on. 
