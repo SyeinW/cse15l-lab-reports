@@ -20,9 +20,9 @@ Using the ssh linked I copied earlier, I typed `git clone git@github.com:SyeinW/
 
 After copying the repository I had to cd into it, since I was currently in my home directory. I used the command `cd lab7/` to make lab7 my active directory. 
 
-I copied and pasted the command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` using `<ctrl> + c>`, followed by `<ctrl> + v`, followed by `<enter>`. I got the command from the week 7 lab report section. 
+I copied and pasted the command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` using `<ctrl> + c>`, followed by `<ctrl> + v`, followed by `<enter>`. I got the command from the week 7 lab report section. The command compiles both the tester file and the program file.
 
-I copied and pasted the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore` using `<ctrl> + c>`, followed by `<ctrl> + v`. I got the command from the week 7 lab report section. Then used `<tab> + <tab>` to show all the files in my current directory as I recall the name of the file I needed. Then I typed `L + <tab> + T + <tab>`, followed by `<enter>`. 
+I copied and pasted the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore` using `<ctrl> + c>`, followed by `<ctrl> + v`. I got the command from the week 7 lab report section. Then used `<tab> + <tab>` to show all the files in my current directory as I recall the name of the file I needed. Then I typed `L + <tab> + T + <tab>`, followed by `<enter>`. The command runs the tester. 
 
 Just as expected, one of the two tests failed.
 
