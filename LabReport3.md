@@ -2,7 +2,7 @@
 ## grep command-line options
 
 ### grep -n
-Usage: ```grep -n``` returns the line number that contains the text pattern, followed by the line itself. It does this for every line that contains the text pattern.
+Explanation: ```grep -n``` returns the line number that contains the text pattern, followed by the line itself. It does this for every line that contains the text pattern.
 
 Citation: grep --help & [grep wiki books](https://en.wikibooks.org/wiki/Grep)
 
