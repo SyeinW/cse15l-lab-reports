@@ -29,12 +29,18 @@ Just as expected, one of the two tests failed.
 
 ## Step 7 (Edit the code file to fix the failing test)
 ![image](https://user-images.githubusercontent.com/113940184/221776555-67f7796d-8d3d-43a0-abe5-0c8d40312d6d.png)
+I typed out the command `nano ListExamples.java` and pressed `<enter>`. This command allows me to edit the code in the ListExamples file within the terminal. 
 
+I used `<ctrl> + w` to move my cursor to the while loop I needed to edit. Once there I had to press `<down> <down>` to get on the correct line, followed by ```<right> <right> <right> <right> <right> <right> <right>``` then I used the `<delete>` key to remove the `1` and replaced it with a `2`. Then I saved the file by using ```<ctrl> + o```, followed by `<enter>`. Finally, I exited nano by using `<ctrl> + x`.
 
 
 ## Step 8 (Run the tests, demonstrating that they now succeed)
 ![image](https://user-images.githubusercontent.com/113940184/221776664-5273a8cb-d1bf-425a-a254-c3f57497dec1.png)
+I ran the command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` again by pressing `<up> <up> <up> <enter>`
 
+Then I ran the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest` again by pressing ```<up> <up> <up> <enter>```
+
+Now instead of there being a failure, both tests passed.
 
 
 ## Step 9 (Commit and push the resulting change to your Github account)
