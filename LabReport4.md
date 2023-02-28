@@ -3,7 +3,7 @@
 ## Step 4 (Log into ieng6)
 ![image](https://user-images.githubusercontent.com/113940184/221774084-7ebe2f3c-8142-4145-9d11-d0b93079d68b.png)
 
-I opened the terminal in VScode using `<ctrl> + <grave>`. Then I logged into the remote server by typing `ssh cs15lwi23aws@ieng6.ucsd.edu` and the pressing `<enter>`. I didn't need to enter in a password since I created a ssh key for my computer. 
+I opened the terminal in VScode using `<ctrl> + <grave>`. Then I logged into the remote server by typing `ssh cs15lwi23aws@ieng6.ucsd.edu` and then pressing `<enter>`. I didn't need to enter in a password since I created a ssh key for my computer. 
 
 
 ## Step 5 (Clone your fork of the repository from your Github account)
