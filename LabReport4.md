@@ -9,7 +9,7 @@ I opened the terminal in VScode using `<ctrl> + <grave>`. Then I logged into the
 ## Step 5 (Clone your fork of the repository from your Github account)
 ![image](https://user-images.githubusercontent.com/113940184/221775444-83cc423d-b7a1-4bbf-8299-838eb81f2a5b.png)
 
-On my github page for the forked repository, I clicked the button labelled "code" and then went into the "ssh" tab. In that tab I copied the ssh link "git@gith...". 
+On my github page for the forked repository, I clicked the button labelled "code" and then went into the "ssh" tab. In that tab I copied the ssh link "git@github.com:SyeinW/lab7.git". 
 
 ![image](https://user-images.githubusercontent.com/113940184/221774093-e1d36b88-528f-467c-ba8a-95c8acf3dc70.png)
 
